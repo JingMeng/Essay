@@ -10,6 +10,10 @@ import com.jamgu.krouter.annotation.KRouter
 import com.jamgu.krouter.core.router.KRouterUriBuilder
 import com.jamgu.krouter.core.router.KRouters
 
+/**
+ * https://mp.weixin.qq.com/s/2HJOiezhc4nkvF8AquBJcA?from=singlemessage&scene=1&subscene=10000&clicktime=1654855124&enterid=1654855124&sessionid=0&ascene=1&fasttmpl_type=0&fasttmpl_fullversion=6191257-zh_CN-zip&fasttmpl_flag=0&realreporttime=1654855124132
+ *
+ */
 @KRouter(value = [Schemes.MainPage2.HOST_NAME])
 class MainActivity2 : AppCompatActivity() {
 
@@ -32,8 +36,13 @@ class MainActivity2 : AppCompatActivity() {
 //                        .build(), 10
 //            )
 
-            KRouters.open(this, KRouterUriBuilder("app_name")
-                        .appendAuthority(Schemes.KeySpeedPage.HOST_NAME).build())
+//            KRouters.open(this, KRouterUriBuilder("app_name")
+//                        .appendAuthority(Schemes.KeySpeedPage.HOST_NAME).build())
+
+            KRouters.open(
+                this, KRouterUriBuilder("app_name")
+                    .appendAuthority(Schemes.ViewEventPage.HOST_NAME3).build()
+            )
 
 //            val intent = Intent(this, MainActivity::class.java)
 //            this.startActivity(intent)
