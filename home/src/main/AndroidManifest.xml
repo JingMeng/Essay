@@ -1,34 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="com.jamgu.home">
+    package="com.jamgu.home">
 
     <application>
         <activity
-                android:name=".keyevent.KeySpeedActivity"
-                android:exported="false" />
+            android:name=".ViewEventActivityTest"
+            android:exported="false" />
+        <activity
+            android:name=".keyevent.KeySpeedActivity"
+            android:exported="false" />
         <activity android:name=".recyclerview.refreshandloadmore.RefreshAndLoadMoreActivity" />
         <activity android:name=".uicrash.UICrashActivity" />
         <activity
-                android:name=".recyclerview.QQContactActivity"
-                android:theme="@style/Transparent_Theme" />
+            android:name=".recyclerview.QQContactActivity"
+            android:theme="@style/Transparent_Theme" />
         <activity
-                android:name=".dawerlayout.DrawerActivity"
-                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:name=".dawerlayout.DrawerActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".viwemodel.ViewModelActivity" />
         <activity android:name=".SettingActivity" />
         <activity
-                android:name=".HomePageActivity"
-                android:launchMode="singleTask"
-                android:taskAffinity="com.jamgu.test2" />
+            android:name=".HomePageActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.jamgu.test2" />
         <activity android:name=".viewevent.ViewEventActivity" />
         <activity android:name=".viewevent.simplesmtart.ViewEventActivity2" />
         <activity
-                android:name=".viewevent.nested.ViewEventActivity3"
-                android:label="ViewEventActivity3" />
+            android:name=".viewevent.nested.ViewEventActivity3"
+            android:label="ViewEventActivity3" />
+        <activity
+            android:name=".viewevent.nested.ViewEventActivityTest"
+            android:label="ViewEventActivityTest" />
 
         <service
-                android:name=".jobscheduler.MJobService"
-                android:permission="android.permission.BIND_JOB_SERVICE" />
+            android:name=".jobscheduler.MJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
     </application>
 
 </manifest>

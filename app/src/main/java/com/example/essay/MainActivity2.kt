@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.jamgu.home.Schemes
+import com.jamgu.home.viewevent.nested.ViewEventActivityTest
 import com.jamgu.krouter.annotation.KRouter
 import com.jamgu.krouter.core.router.KRouterUriBuilder
 import com.jamgu.krouter.core.router.KRouters
@@ -39,10 +40,11 @@ class MainActivity2 : AppCompatActivity() {
 //            KRouters.open(this, KRouterUriBuilder("app_name")
 //                        .appendAuthority(Schemes.KeySpeedPage.HOST_NAME).build())
 
-            KRouters.open(
-                this, KRouterUriBuilder("app_name")
-                    .appendAuthority(Schemes.ViewEventPage.HOST_NAME3).build()
-            )
+//            KRouters.open(
+//                this, KRouterUriBuilder("app_name")
+//                    .appendAuthority(Schemes.ViewEventPage.HOST_NAME3).build()
+
+            startActivity(Intent(this@MainActivity2, ViewEventActivityTest::class.java))
 
 //            val intent = Intent(this, MainActivity::class.java)
 //            this.startActivity(intent)
