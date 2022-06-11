@@ -17,6 +17,9 @@ import com.jamgu.home.R;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * https://mp.weixin.qq.com/s/2HJOiezhc4nkvF8AquBJcA?from=singlemessage&scene=1&subscene=10000&clicktime=1654855124&enterid=1654855124&sessionid=0&ascene=1&fasttmpl_type=0&fasttmpl_fullversion=6191257-zh_CN-zip&fasttmpl_flag=0&realreporttime=1654855124132
+ */
 public class ViewEventActivityTest extends AppCompatActivity {
 
     private static final String TAG = "ViewEventActivityTest";
@@ -27,12 +30,15 @@ public class ViewEventActivityTest extends AppCompatActivity {
         setContentView(R.layout.activity_view_event_test);
 
         RecyclerView recyclerView = findViewById(R.id.vRecycler2);
+        RecyclerView recyclerView2 = findViewById(R.id.vRecycler3);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView2.setLayoutManager(new LinearLayoutManager(this));
         List<String> data = new ArrayList<>();
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 10; i++) {
             data.add(String.valueOf(i));
         }
         recyclerView.setAdapter(new HomeAdapter(this, data));
+        recyclerView2.setAdapter(new HomeAdapter(this, data));
     }
 
     class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyViewHolder> {

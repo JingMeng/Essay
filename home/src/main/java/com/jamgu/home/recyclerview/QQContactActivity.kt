@@ -14,6 +14,12 @@ class QQContactActivity : ViewBindingActivity<ActivityQQContactBinding>() {
         StatusBarUtil.fitStatusLayout(this, mBinding.toolbar, true)
     }
 
-    override fun getViewBinding(): ActivityQQContactBinding = ActivityQQContactBinding.inflate(layoutInflater)
+    /**
+     *   override fun getViewBinding(): ActivityQQContactBinding {
+     *      return ActivityQQContactBinding.inflate(layoutInflater)
+     *    }
+     */
+    override fun getViewBinding(): ActivityQQContactBinding =
+        ActivityQQContactBinding.inflate(layoutInflater)
 
 }
